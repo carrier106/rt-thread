@@ -22,5 +22,8 @@ script:
   - scons -C bsp/$RTT_BSP
 
 env:
+  - RTT_BSP='stm32/stm32f107-uc-eval' RTT_TOOL_CHAIN='sourcery-arm'
+  - RTT_BSP='stm32/stm32l053-st-nucleo' RTT_TOOL_CHAIN='sourcery-arm'
   - RTT_BSP='stm32/stm32l476-st-nucleo' RTT_TOOL_CHAIN='sourcery-arm'
+  - RTT_BSP='swm320-lq100' RTT_TOOL_CHAIN='sourcery-arm'
 
